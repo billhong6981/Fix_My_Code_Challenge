@@ -1,13 +1,13 @@
 #!/usr/bin/node
 /*
     Print a square with the character #
-    
-    The size of the square must be the first argument 
+    The size of the square must be the first argument
     of the program.
 */
 
 
-if (process.argv.length < 2) {
+if (process.argv.length < 2)
+{
     process.stderr.write("Missing argument\n");
     process.stderr.write("Usage: ./1-print_square.js <size>\n");
     process.stderr.write("Example: ./1-print_square.js 8\n");
@@ -18,8 +18,10 @@ size = parseInt(process.argv[2])
 
 var i
 var j
-for (i = 0 ; i < size ; i ++) {
-    for (j = 0 ; j < size ; j ++) {
+for (i = 0; i < size; i++)
+{
+    for (j = 0; j < size; j++)
+    {
         process.stdout.write("#");
     }
     process.stdout.write("\n");
